@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "tf2build";
+    src: url(./fonts/tf2build.ttf) format('truetype');
+}
+* {
+    background-color: #37342f;
+    margin: 0;
+}
+
+button, button:focus{
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+  }
+  
+button:active{
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+  }
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: tf2build;
+    padding-top: 50px;
+    align-items: center;
+}
+header h1 {
+    color: #ede5d0;
+    font-size: 5em;
+    height: 90px;
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+main #hoovy { 
+    width: 670px;
+    height: 510px;
+    margin: 0;
+    top: 2.5px;
+}
+
+main #pootis {
+    position: relative;
+    top: 10px;
+}
+
+main button img {
+    position:relative;
+    right:4px;
+}
+
