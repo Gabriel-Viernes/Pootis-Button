@@ -5,34 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" type = "text/css" href = "assets/style.css">
-    <!-- <script src = "scripts/test.js"></script> -->
+    <!-- loads pootis.wav -->
     <audio id = "pootis">
         <source src = "./assets/audio/pootis.wav" type = "audio/wav">
-
     </audio>
 
-    <script>
-        //initialize pootis variable
-        // to be 
-        var counter = 0;
-        var pootis = document.getElementById("pootis");
-        function test() {
-            pootis.play();
-        }
-        function increment(counter) {
-            counter = counter + 1;
-        }
-        document.getElementById("pootisCount").innerHTML = counter;
-    </script>
+
+
 </head>
 <body>
+
+
+
     <header>
           <h1>POOTIS button</h1>
     </header>
     <main>
         <img src = "./assets/img/hoovy shadow.png" id = "hoovy">
-        <img src="./assets/img/pootis.png" id = "pootis" onclick = "test(); increment();">
-        <p id = "badCSS">Pootis level: <span id = "pootisCount"></span></p>
+        <img src="./assets/img/pootis.png" id = "pootis" onclick = "playSound(); increment();"></img>
+        <p id = "badCSS"> Pootis level:    
+            <span id = "pootisCount" value = 0>
+            </span>
+        </p>
+        <script>
+
+        </script>
     </main>
+    <script>
+
+        var pootis = document.getElementById("pootis");
+        var count = 0;
+        function playSound() {
+          pootis.play();
+        }
+        function increment(count) {
+        count = count + 1;
+        document.getElementById("pootisCount").innerHTML = count;
+        }
+    </script>
+    <script type = "text/javascipt" src = "./js/test.js"></script>
 </body>
+
 </html>
