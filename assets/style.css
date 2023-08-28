@@ -61,3 +61,10 @@ main button img {
     right:4px;
 }
 
+#badCSS {
+    color: #ede5d0;
+    font-size: 5em;
+    font-family: tf2build;
+    padding-top: 50px;
+}
+
