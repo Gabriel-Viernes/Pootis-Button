@@ -24,7 +24,7 @@
         <img src = "./assets/img/hoovy shadow.png" id = "hoovy">
         <img src="./assets/img/pootis.png" id = "pootis" onclick = "playSound(); increment();"></img>
         <p id = "badCSS"> Pootis level:    
-            <span id = "pootisCount" value = 0>
+            <span id = "pootisCount">
             </span>
         </p>
         <script>
@@ -32,18 +32,26 @@
         </script>
     </main>
     <script>
+        // onclick hates external js I guess
+        // var pootis = document.getElementById("pootis");
+        // var count = 0;
+        // function playSound() {
+        //   pootis.play();
+        //   console.log("sound played")
+        // }
+        // function increment(count) {
+        // var debug = count;
+        // count = count + 1;
+        // if (count > debug) {
+        //     console.log("counter incremented")
+        // } else {
+        //     console.log("counter not incremented")
+        // }
 
-        var pootis = document.getElementById("pootis");
-        var count = 0;
-        function playSound() {
-          pootis.play();
-        }
-        function increment(count) {
-        count = count + 1;
-        document.getElementById("pootisCount").innerHTML = count;
-        }
+        // document.getElementById("pootisCount").innerHTML = count;
+        // }
     </script>
-    <script type = "text/javascipt" src = "./js/test.js"></script>
+    <script src = "./js/test.js"></script>
 </body>
 
 </html>
