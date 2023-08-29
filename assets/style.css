@@ -55,6 +55,7 @@ main #pootis {
 main button img {
     position:relative;
     right:4px;
+    cursor: pointer;
 }
 
 #badCSS {
